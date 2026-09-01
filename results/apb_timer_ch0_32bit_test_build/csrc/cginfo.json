@@ -1,0 +1,183 @@
+{
+    "MlibObjs": {},
+    "CompileProcesses": [
+        "cgproc.601.json"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "PrevCompiledModules": {},
+    "NameTable": {
+        "testbench": [
+            "testbench",
+            "iAVhC",
+            "module"
+        ],
+        "_vcs_DPI_package": [
+            "_vcs_DPI_package",
+            "uM9F1",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "vcs_paramclassrepository": [
+            "vcs_paramclassrepository",
+            "hEeZs",
+            "module"
+        ],
+        "apb_pkg": [
+            "apb_pkg",
+            "xtRSS",
+            "module"
+        ],
+        "_vcs_unit__3903913303": [
+            "_vcs_unit__3903913303",
+            "tuzVa",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "_vcs_msglog": [
+            "_vcs_msglog",
+            "zQBzV",
+            "module"
+        ],
+        "comparator": [
+            "comparator",
+            "U57Qt",
+            "module"
+        ],
+        "uvm_pkg": [
+            "uvm_pkg",
+            "zr7M1",
+            "module"
+        ],
+        "apb_interface": [
+            "apb_interface",
+            "ybpDS",
+            "module"
+        ],
+        "top_env_pkg": [
+            "top_env_pkg",
+            "FHvMB",
+            "module"
+        ],
+        "test_pkg": [
+            "test_pkg",
+            "RW5mj",
+            "module"
+        ],
+        "pulp_clock_gating": [
+            "pulp_clock_gating",
+            "NAP8Q",
+            "module"
+        ],
+        "apb_adv_timer": [
+            "apb_adv_timer",
+            "PUfqk",
+            "module"
+        ]
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "vcs_paramclassrepository",
+        "vcs_paramclassrepository",
+        "_vcs_DPI_package",
+        "_vcs_DPI_package",
+        "_vcs_unit__3903913303",
+        "_vcs_unit__3903913303",
+        "std",
+        "std",
+        "uvm_pkg",
+        "uvm_pkg",
+        "_vcs_msglog",
+        "_vcs_msglog",
+        "apb_interface",
+        "apb_interface",
+        "apb_pkg",
+        "apb_pkg",
+        "top_env_pkg",
+        "top_env_pkg",
+        "test_pkg",
+        "test_pkg",
+        "testbench",
+        "testbench",
+        "pulp_clock_gating",
+        "pulp_clock_gating",
+        "apb_adv_timer",
+        "apb_adv_timer",
+        "comparator",
+        "comparator"
+    ],
+    "CompileStrategy": "fullobj",
+    "Misc": {
+        "archive_dir": "archive.0",
+        "cwd": "/mnt/mydata/Daud_Adv_timerrrr",
+        "default_output_dir": "csrc",
+        "csrc": "csrc",
+        "csrc_abs": "/mnt/mydata/Daud_Adv_timerrrr/csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/mnt/mydata/Daud_Adv_timerrrr/simv.daidir"
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_nivcsw": 72,
+            "ru_stime_sec": 0.291045,
+            "ru_utime_sec": 6.7000779999999995,
+            "ru_maxrss_kb": 195912,
+            "ru_minflt": 85870,
+            "ru_majflt": 1339,
+            "ru_nvcsw": 1555
+        },
+        "nMops": 789669,
+        "ru_childs_end": {
+            "ru_nivcsw": 4,
+            "ru_stime_sec": 0.044781000000000001,
+            "ru_utime_sec": 0.0010200000000000001,
+            "ru_maxrss_kb": 98884,
+            "ru_minflt": 1338,
+            "ru_majflt": 3,
+            "ru_nvcsw": 12
+        },
+        "mop/quad": 3.0099369554113906,
+        "ru_childs_cgstart": {
+            "ru_nivcsw": 4,
+            "ru_stime_sec": 0.044781000000000001,
+            "ru_utime_sec": 0.0010200000000000001,
+            "ru_maxrss_kb": 98884,
+            "ru_minflt": 1338,
+            "ru_majflt": 3,
+            "ru_nvcsw": 12
+        },
+        "mopSpeed": 134069.59906403962,
+        "ru_self_end": {
+            "ru_nivcsw": 232,
+            "ru_stime_sec": 0.56995300000000004,
+            "ru_utime_sec": 12.590071,
+            "ru_maxrss_kb": 208400,
+            "ru_minflt": 96046,
+            "ru_majflt": 1440,
+            "ru_nvcsw": 1658
+        },
+        "nQuads": 262354,
+        "totalObjSize": 26501868,
+        "quadSpeed": 44542.327978997593,
+        "outputSizePerQuad": 101.0,
+        "Frontend(%)": 53.21715818759084,
+        "CodeGen(%)": 46.782841812409167
+    },
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "bytes": 464594,
+        "out": "amcQwB.o"
+    },
+    "PEModules": [],
+    "CompileStatus": "Successful"
+}

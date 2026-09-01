@@ -1,0 +1,247 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_601_archive_1.a",
+            "objects": [
+                [
+                    "hEeZs_d.o",
+                    16130957
+                ],
+                [
+                    "uM9F1_d.o",
+                    9884
+                ],
+                [
+                    "tuzVa_d.o",
+                    296658
+                ],
+                [
+                    "reYIK_d.o",
+                    42930
+                ],
+                [
+                    "zr7M1_d.o",
+                    6919258
+                ],
+                [
+                    "zQBzV_d.o",
+                    10807
+                ],
+                [
+                    "ybpDS_d.o",
+                    16643
+                ],
+                [
+                    "xtRSS_d.o",
+                    540010
+                ],
+                [
+                    "FHvMB_d.o",
+                    60590
+                ],
+                [
+                    "RW5mj_d.o",
+                    1735222
+                ],
+                [
+                    "iAVhC_d.o",
+                    25162
+                ],
+                [
+                    "NAP8Q_d.o",
+                    11446
+                ],
+                [
+                    "PUfqk_d.o",
+                    192474
+                ],
+                [
+                    "U57Qt_d.o",
+                    36178
+                ]
+            ],
+            "size": 26028219
+        }
+    ],
+    "Modules": {
+        "apb_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "vcs_paramclassrepository": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "testbench": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "_vcs_DPI_package": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "_vcs_unit__3903913303": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "_vcs_msglog": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "comparator": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "uvm_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "apb_interface": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "top_env_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "test_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "pulp_clock_gating": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "apb_adv_timer": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "PUfqk_d": {
+            "bytes": 192474,
+            "out": "PUfqk_d.o",
+            "mod": "apb_adv_timer",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "zr7M1_d": {
+            "bytes": 6919258,
+            "out": "zr7M1_d.o",
+            "mod": "uvm_pkg",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "NAP8Q_d": {
+            "bytes": 11446,
+            "out": "NAP8Q_d.o",
+            "mod": "pulp_clock_gating",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "amcQw_d": {
+            "bytes": 9055,
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "mode": 4,
+            "checksum": 0
+        },
+        "uM9F1_d": {
+            "bytes": 9884,
+            "out": "uM9F1_d.o",
+            "mod": "_vcs_DPI_package",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "hEeZs_d": {
+            "bytes": 16130957,
+            "out": "hEeZs_d.o",
+            "mod": "vcs_paramclassrepository",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "ybpDS_d": {
+            "bytes": 16643,
+            "out": "ybpDS_d.o",
+            "mod": "apb_interface",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "bytes": 42930,
+            "out": "reYIK_d.o",
+            "mod": "std",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "tuzVa_d": {
+            "bytes": 296658,
+            "out": "tuzVa_d.o",
+            "mod": "_vcs_unit__3903913303",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "zQBzV_d": {
+            "bytes": 10807,
+            "out": "zQBzV_d.o",
+            "mod": "_vcs_msglog",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "iAVhC_d": {
+            "bytes": 25162,
+            "out": "iAVhC_d.o",
+            "mod": "testbench",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "xtRSS_d": {
+            "bytes": 540010,
+            "out": "xtRSS_d.o",
+            "mod": "apb_pkg",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "U57Qt_d": {
+            "bytes": 36178,
+            "out": "U57Qt_d.o",
+            "mod": "comparator",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "FHvMB_d": {
+            "bytes": 60590,
+            "out": "FHvMB_d.o",
+            "mod": "top_env_pkg",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "RW5mj_d": {
+            "bytes": 1735222,
+            "out": "RW5mj_d.o",
+            "mod": "test_pkg",
+            "archive": "archive.0/_601_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {}
+}

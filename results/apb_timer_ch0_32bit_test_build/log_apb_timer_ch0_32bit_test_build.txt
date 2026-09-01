@@ -1,0 +1,684 @@
+
+Note-[RT_BS] Larger stack needed
+  Note: Bumping stack limit from 8192 to 8250 Kbytes.
+
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep  1 20:29 2026
+UVM_INFO /usr/synopsys/vcs-L-2016.06//etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+ VCS Coverage Metrics Release L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+UVM_INFO ./tb_src/test/testbench.sv(82) @ 0: reporter [TESTBENCH] Starting UVM Test
+Debug ilder vs new
+UVM_INFO @ 0: reporter [RNTST] Running test apb_timer_ch0_32bit_test...
+UVM_INFO @ 0: reporter [TIMOUTSET] '+UVM_TIMEOUT=10000000' provided on the command line is being applied.
+UVM_WARNING ./tb_src/apb/apb_env.sv(55) @ 0: uvm_test_top.env.apb [apb_env] Default apb CONFIG OBJ is created
+UVM_WARNING ./tb_src/apb/apb_agent.sv(39) @ 0: uvm_test_top.env.apb.agents[0] [NOCONFIG] Config not set for spi agent 0 , using default is_active field
+UVM_WARNING ./tb_src/apb/apb_driver.sv(29) @ 0: uvm_test_top.env.apb.agents[0].drv [apb_driver] No apb_config found - using defaults
+UVM_INFO ./tb_src/apb/apb_driver.sv(55) @ 0: uvm_test_top.env.apb.agents[0].drv [apb_driver] before Reset
+UVM_INFO ./tb_src/apb/apb_monitor.sv(55) @ 0: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Run phase apb_monitor
+UVM_INFO ./tb_src/test/apb_timer_ch0_32bit_test.sv(35) @ 0: uvm_test_top [apb_timer_ch0_32bit_test] Starting test no           1
+UVM_INFO ./tb_src/apb/apb_seq_lib.sv(30) @ 0: uvm_test_top.env.apb.agents[0].sqr@@apb_seq [apb_timer_ch0_32bit_seq] === 50% PWM on Channel 0 (32-bit) SEQUENCE START ===
+UVM_INFO ./tb_src/test/testbench.sv(33) @ 100000: reporter [TESTBENCH] Reset de-asserted
+UVM_INFO ./tb_src/apb/apb_driver.sv(58) @ 105000: uvm_test_top.env.apb.agents[0].drv [apb_driver] after Reset
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 105000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_monitor.sv(59) @ 105000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Detected Reset Done
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 105000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 125000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #1 (ADDR=0x0, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h8       
+  PADDR            integral         12    'h0       
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'hxxxxxxxx
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h8       
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    125000    
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 135000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 135000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:648, m_inst_count:693, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:1, begin_time:105, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h8, PADDR:'h0, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 335000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 335000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 335000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 355000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #2 (ADDR=0x104, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h1       
+  PADDR            integral         12    'h104     
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'hxxxxxxxx
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h1       
+  ext_sig_i        integral         32    'h1       
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    355000    
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 365000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 365000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:700, m_inst_count:710, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:2, begin_time:335, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h1, PADDR:'h104, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 565000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 565000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 565000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 585000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #3 (ADDR=0x100, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h10000   
+  PADDR            integral         12    'h100     
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'hxxxxxxxx
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h10000   
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    585000    
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 595000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 595000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:716, m_inst_count:726, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:3, begin_time:565, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h10000, PADDR:'h100, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 795000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 795000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 795000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 815000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #4 (ADDR=0x100, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'h8100f2  
+  PADDR            integral         12    'h100     
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h8100f2  
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    815000    
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 825000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 825000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:732, m_inst_count:742, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:4, begin_time:795, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'h8100f2, PADDR:'h100, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 1025000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 1025000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 1025000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 1045000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #5 (ADDR=0x8, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h20000000
+  PADDR            integral         12    'h8       
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h20000000
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    1045000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 1055000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 1055000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:748, m_inst_count:758, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:5, begin_time:1025, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h20000000, PADDR:'h8, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 1255000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 1255000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 1255000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 1275000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #6 (ADDR=0x8, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'h129a1877
+  PADDR            integral         12    'h8       
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h1       
+  ext_sig_i        integral         32    'h129a1877
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    1275000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 1285000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 1285000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:764, m_inst_count:774, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:6, begin_time:1255, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'h129a1877, PADDR:'h8, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 1485000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 1485000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 1485000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 1505000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #7 (ADDR=0x4, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h1000    
+  PADDR            integral         12    'h4       
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h1000    
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    1505000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 1515000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 1515000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:780, m_inst_count:790, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:7, begin_time:1485, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h1000, PADDR:'h4, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 1715000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 1715000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 1715000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 1735000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #8 (ADDR=0x200, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h0       
+  PADDR            integral         12    'h200     
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h0       
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    1735000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 1745000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 1745000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:796, m_inst_count:806, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:8, begin_time:1715, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h0, PADDR:'h200, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 1945000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 1945000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 1945000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 1965000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #9 (ADDR=0x200, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'ha4d0059d
+  PADDR            integral         12    'h200     
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h1       
+  ext_sig_i        integral         32    'ha4d0059d
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    1965000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 1975000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 1975000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:812, m_inst_count:822, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:9, begin_time:1945, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'ha4d0059d, PADDR:'h200, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 2175000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 2175000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 2175000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 2195000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #10 (ADDR=0xc, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h1000    
+  PADDR            integral         12    'hc       
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h1000    
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    2195000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 2205000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 2205000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:828, m_inst_count:838, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:10, begin_time:2175, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h1000, PADDR:'hc, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 2405000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 2405000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 2405000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 2425000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #11 (ADDR=0xc, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'h44a58ed3
+  PADDR            integral         12    'hc       
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h1       
+  ext_sig_i        integral         32    'h44a58ed3
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    2425000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 2435000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 2435000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:844, m_inst_count:854, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:11, begin_time:2405, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'h44a58ed3, PADDR:'hc, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 2635000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 2635000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 2635000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 2655000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #12 (ADDR=0x204, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h0       
+  PADDR            integral         12    'h204     
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h0       
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    2655000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 2665000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 2665000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:860, m_inst_count:870, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:12, begin_time:2635, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h0, PADDR:'h204, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 2865000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 2865000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 2865000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 2885000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #13 (ADDR=0x204, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'he81cc9f1
+  PADDR            integral         12    'h204     
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h1       
+  ext_sig_i        integral         32    'he81cc9f1
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    2885000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 2895000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 2895000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:876, m_inst_count:886, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:13, begin_time:2865, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'he81cc9f1, PADDR:'h204, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 3095000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 3095000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 3095000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 3115000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #14 (ADDR=0x0, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h4       
+  PADDR            integral         12    'h0       
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h4       
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    3115000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 3125000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 20 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 3125000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:892, m_inst_count:902, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:14, begin_time:3095, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h4, PADDR:'h0, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h14, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 3325000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 3325000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 3325000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 3345000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #15 (ADDR=0x0, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h1       
+  PADDR            integral         12    'h0       
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h1       
+  ext_sig_i        integral         32    'h1       
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    3345000   
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 3355000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 50 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 3355000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:908, m_inst_count:918, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:15, begin_time:3325, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h1, PADDR:'h0, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h32, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 3855000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 3855000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_seq_lib.sv(145) @ 3855000: uvm_test_top.env.apb.agents[0].sqr@@apb_seq [apb_timer_ch0_32bit_seq] 50% PWM on ch_o[0] started. Counter should toggle at 0x8000.
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 3855000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 3865000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 5000 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 3865000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:926, m_inst_count:934, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:16, begin_time:3855, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h7e2a69f2, PADDR:'hc82, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h0, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'hxxxxxxxx, PREADY:'hx, PSLVERR:'hx, delay:'h1388, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 53865000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 53865000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 53865000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 53885000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #16 (ADDR=0x2c, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'ha2e1eaad
+  PADDR            integral         12    'h2c      
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h1       
+  ext_sig_i        integral         32    'ha2e1eaad
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    53885000  
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 53895000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 100 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 53895000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:940, m_inst_count:950, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:17, begin_time:53865, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'ha2e1eaad, PADDR:'h2c, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h64, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 54895000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 54895000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 54895000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 54915000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #17 (ADDR=0x2c, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'hc8ccfc64
+  PADDR            integral         12    'h2c      
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'hc8ccfc64
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    54915000  
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 54925000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 100 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 54925000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:956, m_inst_count:966, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:18, begin_time:54895, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'hc8ccfc64, PADDR:'h2c, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h64, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 55925000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 55925000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 55925000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 55945000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #18 (ADDR=0x2c, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'hf9f9d886
+  PADDR            integral         12    'h2c      
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'hf9f9d886
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    55945000  
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 55955000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 100 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 55955000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:972, m_inst_count:982, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:19, begin_time:55925, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'hf9f9d886, PADDR:'h2c, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h64, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 56955000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 56955000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 56955000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 56975000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #19 (ADDR=0x2c, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'hc1ad89f8
+  PADDR            integral         12    'h2c      
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'hc1ad89f8
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    56975000  
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 56985000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 100 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 56985000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:988, m_inst_count:998, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:20, begin_time:56955, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'hc1ad89f8, PADDR:'h2c, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h64, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 57985000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 57985000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 57985000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 58005000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #20 (ADDR=0x2c, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'h5d35815 
+  PADDR            integral         12    'h2c      
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h1       
+  ext_sig_i        integral         32    'h5d35815 
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    58005000  
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 58015000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 100 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 58015000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:1004, m_inst_count:1014, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:21, begin_time:57985, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'h5d35815, PADDR:'h2c, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h64, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 59015000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 59015000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 59015000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 59035000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #21 (ADDR=0x2c, WRITE=0):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h0       
+  PWDATA           integral         32    'h954ecf85
+  PADDR            integral         12    'h2c      
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h1       
+  ext_sig_i        integral         32    'h954ecf85
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    59035000  
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 59045000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 100 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 59045000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:1020, m_inst_count:1030, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:22, begin_time:59015, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h0, PWDATA:'h954ecf85, PADDR:'h2c, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h64, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 60045000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 60045000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_driver.sv(98) @ 60045000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the drive task  
+UVM_INFO ./tb_src/apb/apb_monitor.sv(104) @ 60065000: uvm_test_top.env.apb.agents[0].mon [apb_monitor] Collected APB Transaction #22 (ADDR=0x0, WRITE=1):
+----------------------------------------------------
+Name               Type             Size  Value     
+----------------------------------------------------
+trans_collected    apb_transaction  -     @635      
+  PWRITE           integral         1     'h1       
+  PWDATA           integral         32    'h2       
+  PADDR            integral         12    'h0       
+  PSEL             integral         1     'hX       
+  PENABLE          integral         1     'hX       
+  PRDATA           integral         32    'h0       
+  PREADY           integral         1     'hX       
+  PSLVERR          integral         1     'h0       
+  delay            integral         32    'h0       
+  dft_cg_enable_i  integral         1     'h0       
+  ext_sig_i        integral         32    'h2       
+  ch_o             integral         4     'hx       
+  timer_counter_o  integral         32    'hxxxxxxxx
+  events_o         integral         4     'hx       
+  begin_time       time             64    60065000  
+----------------------------------------------------
+
+UVM_INFO ./tb_src/apb/apb_driver.sv(77) @ 60075000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction delay 0 
+UVM_INFO ./tb_src/apb/apb_driver.sv(78) @ 60075000: uvm_test_top.env.apb.agents[0].drv [apb_driver] Full transaction fields '{use_uvm_seeding:'h1, m_leaf_name:"req", m_inst_id:1036, m_inst_count:1046, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, events:{ ref to class uvm_object_string_pool#(uvm_pkg::uvm_event#(uvm_pkg::uvm_object))}, begin_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, end_event:{ ref to class uvm_event#(uvm_pkg::uvm_object)}, m_transaction_id:23, begin_time:60045, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:1, m_use_sequence_info:'h1, m_depth:2, m_sequencer:{ ref to class uvm_sequencer_base}, m_parent_sequence:{ ref to class uvm_sequence_base}, issued1:'h0, issued2:'h0, print_sequence_info:'h0, PWRITE:'h1, PWDATA:'h2, PADDR:'h0, dft_cg_enable_i:'h0, ext_sig_i:'h0, PSEL:'h1, ch_o:'hx, timer_counter_o:'hxxxxxxxx, events_o:'hx, PENABLE:'hx, PRDATA:'h0, PREADY:'hx, PSLVERR:'hx, delay:'h0, type_name:"apb_transaction"} 
+UVM_INFO ./tb_src/apb/apb_driver.sv(87) @ 60075000: uvm_test_top.env.apb.agents[0].drv [apb_driver] transaction done  
+UVM_INFO ./tb_src/apb/apb_driver.sv(63) @ 60075000: uvm_test_top.env.apb.agents[0].drv [apb_driver] in the APB 
+UVM_INFO ./tb_src/apb/apb_seq_lib.sv(166) @ 60075000: uvm_test_top.env.apb.agents[0].sqr@@apb_seq [apb_timer_ch0_32bit_seq] === 50% PWM on Channel 0 SEQUENCE COMPLETED ===
+UVM_INFO ./tb_src/test/apb_timer_ch0_32bit_test.sv(40) @ 60075000: uvm_test_top [apb_timer_ch0_32bit_test] Sequence finished
+UVM_INFO /usr/synopsys/vcs-L-2016.06//etc/uvm-1.2/base/uvm_objection.svh(1270) @ 60075000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /usr/synopsys/vcs-L-2016.06//etc/uvm-1.2/base/uvm_report_server.svh(894) @ 60075000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  153
+UVM_WARNING :    3
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[NOCONFIG]     1
+[RNTST]     1
+[TESTBENCH]     2
+[TEST_DONE]     1
+[TIMOUTSET]     1
+[UVM/RELNOTES]     1
+[apb_driver]   119
+[apb_env]     1
+[apb_monitor]    24
+[apb_timer_ch0_32bit_seq]     3
+[apb_timer_ch0_32bit_test]     2
+
+$finish called from file "/usr/synopsys/vcs-L-2016.06//etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time             60075000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 60075000 ps
+CPU Time:      0.490 seconds;       Data structure size:   0.6Mb
+Tue Sep  1 20:29:22 2026

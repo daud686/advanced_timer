@@ -1,0 +1,77 @@
+{
+    "testbench": [
+        "testbench",
+        "iAVhC",
+        "module"
+    ],
+    "_vcs_DPI_package": [
+        "_vcs_DPI_package",
+        "uM9F1",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "vcs_paramclassrepository": [
+        "vcs_paramclassrepository",
+        "hEeZs",
+        "module"
+    ],
+    "apb_pkg": [
+        "apb_pkg",
+        "xtRSS",
+        "module"
+    ],
+    "_vcs_unit__3903913303": [
+        "_vcs_unit__3903913303",
+        "tuzVa",
+        "module"
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "_vcs_msglog": [
+        "_vcs_msglog",
+        "zQBzV",
+        "module"
+    ],
+    "comparator": [
+        "comparator",
+        "U57Qt",
+        "module"
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module"
+    ],
+    "apb_interface": [
+        "apb_interface",
+        "ybpDS",
+        "module"
+    ],
+    "top_env_pkg": [
+        "top_env_pkg",
+        "FHvMB",
+        "module"
+    ],
+    "test_pkg": [
+        "test_pkg",
+        "RW5mj",
+        "module"
+    ],
+    "pulp_clock_gating": [
+        "pulp_clock_gating",
+        "NAP8Q",
+        "module"
+    ],
+    "apb_adv_timer": [
+        "apb_adv_timer",
+        "PUfqk",
+        "module"
+    ]
+}
